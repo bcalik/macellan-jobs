@@ -47,7 +47,7 @@
             27" iMac Late 2013 <br>
             Sınırsız çay, kahve<br>
             Yol masrafı <br>
-            Yemek <br>
+            Yemek <br><br>
             Hey şey süperse devam edelim!
           </p>
         </div>
