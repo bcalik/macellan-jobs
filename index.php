@@ -57,7 +57,7 @@
     function denizHareket () {
       $(".dalga-1").css({ transform: "translateX(-200px)" });
       $(".dalga-2").css({ transform: "translateX(200px)" });
-      $(".taban-1").css({ transform: "translateX(-50px)" });
+      $(".taban-1").css({ transform: "translateX(-100px)" });
 
       setTimeout(function(){
         $(".dalga-1").css({ transform: "translateX(0px)" });
@@ -83,7 +83,7 @@
     // default degerler
     var SAHNE = 1;
     var SAHNE_ANIM = false;
-    var DEFAULT_DURATION = 4000;
+    var DEFAULT_DURATION = 3000;
 
     function sahne_degis (no) {
       if (SAHNE_ANIM) return;
