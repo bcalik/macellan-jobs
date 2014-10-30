@@ -147,7 +147,7 @@
                               { duration: DEFAULT_DURATION, queue: false, easing: [.58,.01,.58,1] });
           setTimeout(function(){
             $(".agac-top").addClass("animation-bounce");
-          }, DEFAULT_DURATION + 500);
+          }, DEFAULT_DURATION + 1000);
           break;
 
         default:
