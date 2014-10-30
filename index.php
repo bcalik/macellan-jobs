@@ -68,7 +68,7 @@
   </div><!-- /canvas -->
 
   <script src="assets/js/jquery-2.1.1.min.js"></script>
-  <script src="assets/js/jquery.transit.min.js"></script>
+  <!-- <script src="assets/js/jquery.transit.min.js"></script> -->
   <script src="assets/js/velocity.min.js"></script>
   <script>
 
@@ -131,6 +131,10 @@
                               { duration: DEFAULT_DURATION, easing: "ease-in-out", queue: false });
           $(".gemi").velocity({ translateX:'2600px', scale:'1.3', marginBottom: "170px" },
                               { duration: DEFAULT_DURATION, queue: false, easing: [.58,.01,.58,1] });
+          // alert('translate3D(-2250px, 0, 0) scale('+SCALE+')');
+          // $(".gemi").velocity('stop');
+          // $(".gemi").css({ transition:'all '+(DEFAULT_DURATION/1000)+'s', transform:'translateX(2600px) scale(1.3)', marginBottom: "170px" });
+          // $("#canvas").css({ transition: 'all '+(DEFAULT_DURATION/1000)+'s', transform: 'translateX(-1250px) scale('+SCALE+') translateZ(0)' });
           $(".sahne-1 .buzul-3").velocity({ translateX: "-700px", tranzlateZ: 0 },
                               { duration: DEFAULT_DURATION, queue: false });
 
@@ -170,16 +174,17 @@
     // OPTIMIZE CANVAS SIZE
     var OPTIMIZED_WIDTH = 2500;
     var DENIZ_GORUNEN = 30;
+    var SCALE = 0;
     $window = $(window);
 
     function resized () {
-      var factor_x = Math.round($window.width() / OPTIMIZED_WIDTH * 100) / 100;
-      $('#canvas').velocity({ scale: factor_x, translateZ: 0 }, { duration: 0 });
+      SCALE = Math.round($window.width() / OPTIMIZED_WIDTH * 100) / 100;
+      $('#canvas').velocity({ scale: SCALE, translateZ: 0 }, { duration: 0 });
 
-      $(".deniz").height( $window.height() / factor_x / 100 * DENIZ_GORUNEN );
+      $(".deniz").height( $window.height() / SCALE / 100 * DENIZ_GORUNEN );
       $(".yuzey").css({
         "bottom": ($(".deniz").height())+"px",
-        "height": (($window.height() / factor_x) - ($(".deniz").height()+50))+"px",
+        "height": (($window.height() / SCALE) - ($(".deniz").height()+50))+"px",
       });
     }
 
