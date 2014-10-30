@@ -6,6 +6,7 @@
 
   <link rel="stylesheet" href="assets/css/fonts.css">
   <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/anims.css">
   <link rel="stylesheet" href="assets/css/main.css">
 
 </head>
@@ -38,6 +39,23 @@
         <div class="buzul4 buzul-1"></div>
         <div class="buzul buzul-2"></div>
       </div><!-- /sahne-2 -->
+
+      <div class="sahne-3">
+        <div class="text-1">
+          <p>Mürettebatımıza Katıldığında<br>Sana Sunacaklarımız:</p>
+          <p class="small">
+            27" iMac Late 2013 <br>
+            Sınırsız çay, kahve<br>
+            Yol masrafı <br>
+            Yemek <br>
+            Hey şey süperse devam edelim!
+          </p>
+        </div>
+        <div class="agac"></div>
+        <div class="agac-top"></div>
+        <div class="yesil-alan"></div>
+        <div class="yesil-alan-taban"></div>
+      </div>
 
     </div><!-- /yuzey -->
     
@@ -111,9 +129,9 @@
         case 2:
           $("#canvas").velocity({ translateX:'-2250px', translateZ: 0 }, 
                               { duration: DEFAULT_DURATION, easing: "ease-in-out", queue: false });
-          $(".gemi").velocity({ translateX:'2600px', scale:'1.4', marginBottom: "170px" },
+          $(".gemi").velocity({ translateX:'2600px', scale:'1.3', marginBottom: "170px" },
                               { duration: DEFAULT_DURATION, queue: false, easing: [.58,.01,.58,1] });
-          $(".sahne-1 .buzul-3").velocity({ translateX: "-400px", tranzlateZ: 0 },
+          $(".sahne-1 .buzul-3").velocity({ translateX: "-700px", tranzlateZ: 0 },
                               { duration: DEFAULT_DURATION, queue: false });
 
           // 3. sahneye gec
@@ -123,10 +141,13 @@
           break;
 
         case 3:
-          $("#canvas").velocity({ translateX:'-4050px', translateZ: 0 },
+          $("#canvas").velocity({ translateX:'-6050px', translateZ: 0 },
                               { duration: DEFAULT_DURATION, easing: "ease-in-out", queue: false });
-          $(".gemi").velocity({ translateX:'4000px', scale:'1', marginBottom: "0px" },
+          $(".gemi").velocity({ translateX:'6000px', scale:'1', marginBottom: "0px" },
                               { duration: DEFAULT_DURATION, queue: false, easing: [.58,.01,.58,1] });
+          setTimeout(function(){
+            $(".agac-top").addClass("animation-bounce");
+          }, DEFAULT_DURATION + 500);
           break;
 
         default:
@@ -148,7 +169,7 @@
 
     // OPTIMIZE CANVAS SIZE
     var OPTIMIZED_WIDTH = 2500;
-    var DENIZ_GORUNEN = 20;
+    var DENIZ_GORUNEN = 30;
     $window = $(window);
 
     function resized () {

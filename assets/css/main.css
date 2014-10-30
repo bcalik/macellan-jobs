@@ -76,12 +76,12 @@ p.small {
   bottom: 0;
 }
 .deniz {
-  background-color: #00405E;
+  background-color: #00253F;
   position: absolute;
   bottom: 0;
   height: 300px;
   min-width: 100%;
-  width: 9000px;
+  width: 20000px;
   left: 0;
   margin-left: -500px;
 }
@@ -91,6 +91,7 @@ p.small {
   height: 100%;
   position: absolute;
   background-color: rgba(0, 64, 94, 0.75);
+  background-color: rgba(0, 37, 63, 0.75);
   z-index: 150;
 }
 .deniz > div {
@@ -105,7 +106,7 @@ p.small {
   background-image: url(../img/deniz-1.svg);
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: left top;
   margin-top: -186px;
   z-index: 1;
@@ -114,7 +115,7 @@ p.small {
   background-image: url(../img/deniz-2.svg);
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: left top;
   margin-top: -128px;
   z-index: 99;
@@ -123,7 +124,7 @@ p.small {
   background-image: url(../img/deniz-alt2.svg);
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: left top;
   z-index: 300;
 }
@@ -228,4 +229,67 @@ p.small {
   z-index: -2;
   margin-left: 4000px;
   margin-bottom: -50px;
+}
+.sahne-3 .yesil-alan {
+  background-image: url(../img/yesil-alan.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  width: 2564.012px;
+  height: 228.622px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  margin-left: 6000px;
+  margin-bottom: 0px;
+  z-index: 100;
+}
+.sahne-3 .yesil-alan-taban {
+  background-image: url(../img/yesil-alt.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  width: 3108px;
+  height: 1793.555px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  margin-left: 5745px;
+  margin-bottom: -1793px;
+  z-index: 100;
+}
+.sahne-3 .agac {
+  background-image: url(../img/agac.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  width: 590px;
+  height: 647px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  margin-left: 7300px;
+  margin-bottom: 10px;
+  z-index: 102;
+}
+.sahne-3 .agac-top {
+  background-image: url(../img/top.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  width: 39px;
+  height: 39px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  margin-left: 7550px;
+  margin-bottom: 430px;
+  z-index: 103;
+}
+.sahne-3 .text-1 {
+  position: absolute;
+  top: 0;
+  width: 1144px;
+  margin-left: 6110px;
+  z-index: 150;
 }
