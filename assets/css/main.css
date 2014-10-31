@@ -388,30 +388,30 @@ p.small {
 }
 .sahne-4 .suru-1 {
   margin-left: 8640px;
-  margin-bottom: -680px;
+  margin-bottom: -450px;
   z-index: 100;
 }
 .sahne-4 .suru-2 {
   margin-left: 9719px;
-  margin-bottom: -852px;
+  margin-bottom: -1000px;
   z-index: 100;
   width: 168px;
   height: 69px;
 }
 .sahne-4 .balik-1 {
   margin-left: 8962px;
-  margin-bottom: -852px;
+  margin-bottom: -992px;
   z-index: 100;
 }
 .sahne-4 .balik-2 {
   margin-left: 8888px;
-  margin-bottom: -843px;
+  margin-bottom: -983px;
   z-index: 100;
   width: 80px;
 }
 .sahne-4 .balik-3 {
   margin-left: 8914px;
-  margin-bottom: -923px;
+  margin-bottom: -1073px;
   z-index: 100;
   width: 60px;
 }
@@ -467,6 +467,7 @@ p.small {
   display: inline-block;
   background-color: #1073BB;
   cursor: pointer;
+  border-radius: 2px;
 }
 .envanter .item:before, .envanter .item:after {
   content: "";
@@ -476,12 +477,14 @@ p.small {
   border-right: 75px solid transparent;
 }
 .envanter .item:before {
+  margin-bottom: -1px;
   bottom: 100%;
   border-top: none !important;
   border-bottom: 43.30px solid #1073BB;
   background-color: transparent !important;
 }
 .envanter .item:after {
+  margin-top: -1px;
   top: 100%;
   width: 0;
   border-bottom: none !important;
@@ -493,11 +496,12 @@ p.small {
   margin-top: 27px;
 }
 .item, .item:before, .item:after {
-  /*+transition: all 0.2s;*/
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  /*+transition: all 0.2s ease-out;*/
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  will-change: transform, opacity;
 }
 .sass.item, .sass.item:before, .sass.item:after {
   background-color: #CF6398;

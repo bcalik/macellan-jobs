@@ -26,7 +26,7 @@ function gemiHareket () {
 // default degerler
 var SAHNE = 1;
 var SAHNE_ANIM = false;
-var DEFAULT_DURATION = 3000;
+var DEFAULT_DURATION = 1000;
 
 function sahne_degis (no) {
   if (SAHNE_ANIM) return;
@@ -76,8 +76,7 @@ function sahne_degis (no) {
       $(".gemi").velocity({ translateX:'6000px', scale:'1', marginBottom: "0px" },
                           { duration: DEFAULT_DURATION, queue: false, easing: [.58,.01,.58,1] });
       
-      $(".sahne-4 .pozisyonlar > div").velocity({ opacity: 0, translateY: "0pxs" },
-            { duration: 0, easing: "ease", queue: false });
+      $(".sahne-4 .envanter .item").css({ opacity: 0, transform: "translateY(-30px)" });
 
       setTimeout(function(){
         $(".agac-top").addClass("animation-bounce");
@@ -104,11 +103,12 @@ function sahne_degis (no) {
 
         // baliklar
         setTimeout(function(){
-          var timer = -100;
-          $(".sahne-4 .pozisyonlar > div").each(function(){
-            timer += 250;
-            $(this).velocity({ translateY: '20px', opacity: 1 },
-            { duration: 750, delay: timer, easing: "ease", queue: false });
+          var timer = 0;
+          $(".sahne-4 .envanter .item").each(function(){
+            timer += 75;
+            setTimeout(function($item){
+              $item.css({ transform: "translateY(0px)", opacity: 1 });
+            }, timer, $(this));
           });
 
           $(".sahne-4 .balik").velocity({ translateX: '500px', translateZ: 0 },
