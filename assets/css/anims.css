@@ -60,7 +60,7 @@
 }
 
 .animation-bounce {
-  -webkit-animation: bounce 500ms cubic-bezier(.7,.35,.96,.19) both;
+  -webkit-animation: bounce 3500ms cubic-bezier(.7,.35,.96,.19) both;
   animation: bounce 3500ms cubic-bezier(.7,.35,.96,.19) both;
 }
 
