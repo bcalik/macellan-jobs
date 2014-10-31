@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/anims.css">
   <link rel="stylesheet" href="assets/css/main.css">
-
 </head>
 <body>
   
