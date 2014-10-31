@@ -98,6 +98,7 @@ p.small {
   position: absolute;
   background-color: rgba(0, 64, 94, 0.75);
   background-color: rgba(0, 37, 63, 0.75);
+  background-color: rgba(0, 37, 63, 0.25);
   z-index: 150;
 }
 .deniz > div {
@@ -305,4 +306,101 @@ p.small {
   width: 1144px;
   margin-left: 6110px;
   z-index: 150;
+}
+.balik-suru {
+  background-image: url(../img/balik-suru-1.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  width: 265.5px;
+  height: 85px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+.balik {
+  background-image: url(../img/buyuk-balik.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  width: 115px;
+  height: 95px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+.kaplumbaga {
+  width: 133px;
+  height: 214px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+.kaplumbaga .govde {
+  background-image: url(../img/kaplumbaga-govde.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  width: 133px;
+  height: 214px;
+  position: absolute;
+  z-index: 0;
+}
+.kaplumbaga .sag {
+  background-image: url(../img/kaplumbaga-sag-kol.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  margin-left: 106px;
+  margin-top: 66px;
+  width: 78px;
+  height: 36px;
+  position: absolute;
+  z-index: -1;
+}
+.kaplumbaga .sol {
+  background-image: url(../img/kaplumbaga-sol-kol.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  margin-left: -15px;
+  margin-top: 38px;
+  width: 78px;
+  height: 36px;
+  position: absolute;
+  z-index: -1;
+}
+.sahne-4 .suru-1 {
+  margin-left: 8640px;
+  margin-bottom: -680px;
+  z-index: 100;
+}
+.sahne-4 .suru-2 {
+  margin-left: 10249px;
+  margin-bottom: -852px;
+  z-index: 100;
+  width: 168px;
+  height: 69px;
+}
+.sahne-4 .balik-1 {
+  margin-left: 8962px;
+  margin-bottom: -852px;
+  z-index: 100;
+}
+.sahne-4 .balik-2 {
+  margin-left: 8888px;
+  margin-bottom: -843px;
+  z-index: 100;
+  width: 80px;
+}
+.sahne-4 .balik-3 {
+  margin-left: 8914px;
+  margin-bottom: -923px;
+  z-index: 100;
+  width: 60px;
+}
+.sahne-4 .kaplumbaga-1 {
+  margin-left: 10559px;
+  margin-bottom: -910px;
+  z-index: 100;
 }

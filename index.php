@@ -56,12 +56,35 @@
         <div class="yesil-alan-taban"></div>
       </div><!-- /sahne-3 -->
 
+      <div class="sahne-4">
+        
+        <div class="pozisyonlar">
+          <div class="text">Pozisyonunu Seç!</div>
+          <div class="pozisyon disabled">Art Director</div>
+          <div class="pozisyon">Fullstack Developer</div>
+          <div class="pozisyon">Frontend Developer</div>
+          <div class="pozisyon">Backend Developer</div>
+        </div><!-- /pozisyonlar -->
+
+        <div class="balik-suru suru-1"></div>
+        <div class="balik-suru suru-2"></div>
+        <div class="balik balik-1"></div>
+        <div class="balik balik-2"></div>
+        <div class="balik balik-3"></div>
+        <div class="kaplumbaga kaplumbaga-1">
+          <div class="sol"></div>
+          <div class="govde"></div>
+          <div class="sag"></div>
+        </div>
+      </div><!-- /sahne-4 -->
+
     </div><!-- /yuzey -->
     
     <div class="deniz">
       <div class="dalga-1"></div>
       <div class="dalga-2"></div>
       <div class="taban-1"></div>
+      <div class="toprak"></div>
     </div><!-- /deniz -->
 
   </div><!-- /canvas -->

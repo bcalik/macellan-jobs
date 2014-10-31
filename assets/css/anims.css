@@ -1,5 +1,66 @@
+.kaplumbaga .sag {
+  -webkit-animation: kaplumbaga-sag-kol 1s infinite;
+  -webkit-animation-direction: alternate;
+  transform-origin: center left;
+  animation: kaplumbaga-sag-kol 1s infinite;
+  animation-direction: alternate;
+  -webkit-transform-origin: center left;
+}
+.kaplumbaga .sol {
+  -webkit-animation: kaplumbaga-sol-kol 1s infinite;
+  -webkit-animation-direction: alternate;
+  transform-origin: center right;
+  animation: kaplumbaga-sol-kol 1s infinite;
+  animation-direction: alternate;
+  -webkit-transform-origin: center right;
+}
+
+@keyframes kaplumbaga-sol-kol {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+  }
+}
+
+@-webkit-keyframes kaplumbaga-sol-kol {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+  }
+}
+
+@keyframes kaplumbaga-sag-kol {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+  }
+}
+
+@-webkit-keyframes kaplumbaga-sag-kol {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+  }
+}
+
 .animation-bounce {
-  -webkit-animation: bounce 3500ms cubic-bezier(.7,.35,.96,.19) both;
+  -webkit-animation: bounce 500ms cubic-bezier(.7,.35,.96,.19) both;
   animation: bounce 3500ms cubic-bezier(.7,.35,.96,.19) both;
 }
 
