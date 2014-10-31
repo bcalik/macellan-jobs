@@ -60,12 +60,13 @@
         
         <div class="pozisyonlar">
           <div class="text">Pozisyonunu Seç!</div>
+          <div class="pozisyon">Full Stack Web Developer</div>
+          <div class="pozisyon">Front-End Web Developer</div>
+          <div class="pozisyon">PHP/Laravel Developer</div>
           <div class="pozisyon disabled">Art Director</div>
-          <div class="pozisyon">Fullstack Developer</div>
-          <div class="pozisyon">Frontend Developer</div>
-          <div class="pozisyon">Backend Developer</div>
         </div><!-- /pozisyonlar -->
 
+        <div class="ot1 ot-1"></div>
         <div class="balik-suru suru-1"></div>
         <div class="balik-suru suru-2"></div>
         <div class="balik balik-1"></div>

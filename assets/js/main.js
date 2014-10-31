@@ -26,7 +26,7 @@ function gemiHareket () {
 // default degerler
 var SAHNE = 1;
 var SAHNE_ANIM = false;
-var DEFAULT_DURATION = 250;
+var DEFAULT_DURATION = 3000;
 
 function sahne_degis (no) {
   if (SAHNE_ANIM) return;
@@ -52,6 +52,7 @@ function sahne_degis (no) {
                           { duration: DEFAULT_DURATION, queue: false });
       break;
 
+
     case 2:
       // gemiyi ve görüntüyü buzul alana yanaştır
       $("#canvas").velocity({ translateX:'-2250px', translateZ: 0 }, 
@@ -67,16 +68,22 @@ function sahne_degis (no) {
       }, DEFAULT_DURATION);
       break;
 
+
     case 3:
       // gemiyi ve görüntüyü yesil alana yanaştır
       $("#canvas").velocity({ translateX:'-6050px', translateZ: 0 },
                           { duration: DEFAULT_DURATION, easing: "ease-in-out", queue: false });
       $(".gemi").velocity({ translateX:'6000px', scale:'1', marginBottom: "0px" },
                           { duration: DEFAULT_DURATION, queue: false, easing: [.58,.01,.58,1] });
+      
+      $(".sahne-4 .pozisyonlar > div").velocity({ opacity: 0, translateY: "0pxs" },
+            { duration: 0, easing: "ease", queue: false });
+
       setTimeout(function(){
         $(".agac-top").addClass("animation-bounce");
       }, DEFAULT_DURATION + 1000);
       break;
+
 
     case 4:
       $("#canvas").velocity({ translateX:'-8550px', translateZ: 0 },
@@ -95,10 +102,28 @@ function sahne_degis (no) {
           "height": (($window.height() / SCALE) - (newH+50))+"px",
         }, { duration: DEFAULT_DURATION/2, easing: "ease-in-out", queue: false });
 
+        // baliklar
+        setTimeout(function(){
+          var timer = -100;
+          $(".sahne-4 .pozisyonlar > div").each(function(){
+            timer += 250;
+            $(this).velocity({ translateY: '20px', opacity: 1 },
+            { duration: 750, delay: timer, easing: "ease", queue: false });
+          });
+
+          $(".sahne-4 .balik").velocity({ translateX: '500px', translateZ: 0 },
+            { duration: 100000, easing: "linear", queue: false });
+          $(".sahne-4 .balik-suru").velocity({ translateX: '1000px', translateZ: 0 },
+            { duration: 100000, easing: "linear", queue: false });
+          $(".sahne-4 .kaplumbaga").velocity({ translateY: '-500px', translateX: '250px', translateZ: 0 },
+            { duration: 100000, easing: "linear", queue: false });          
+        }, DEFAULT_DURATION/2);
+
         // $("#canvas").velocity({ translateY:'-1000px', translateZ: 0 },
         //                      { duration: DEFAULT_DURATION/2, easing: "ease-in-out", queue: false });
       }, DEFAULT_DURATION/2);
       break;
+
 
     case 5:
       // görüntüyü denizden yukarı çıkart
@@ -121,6 +146,15 @@ function sahne_degis (no) {
                           { duration: DEFAULT_DURATION, queue: false, easing: [.58,.01,.58,1] });
       $(".sahne-1 .buzul-3").velocity({ translateX: "0px", tranzlateZ: 0 },
                           { duration: DEFAULT_DURATION, queue: false });
+
+      // baliklar
+      $(".sahne-4 .balik").velocity({ translateX: '0px', translateZ: 0 },
+        { duration: 0, easing: "linear", queue: false });
+      $(".sahne-4 .balik-suru").velocity({ translateX: '0px', translateZ: 0 },
+        { duration: 0, easing: "linear", queue: false });
+      $(".sahne-4 .kaplumbaga").velocity({ translateY: '0px', translateX: '0px', translateZ: 0 },
+        { duration: 0, easing: "linear", queue: false });
+
       break;
   }
 }
