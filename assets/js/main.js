@@ -196,6 +196,12 @@ $(function(){
   });
   resized();
 
+  // envanter yonetimi
+  $('.envanter .item').on("click", function(){
+    $(this).toggleClass("disabled");
+    $(this).toggleClass("animation-scale-bounce");
+  });
+
   // canvas controller
   $("#DENIZ_GORUNEN").val( DENIZ_GORUNEN );
   $("#OPTIMIZED_WIDTH").val( OPTIMIZED_WIDTH );

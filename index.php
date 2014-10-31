@@ -57,14 +57,31 @@
       </div><!-- /sahne-3 -->
 
       <div class="sahne-4">
-        
-        <div class="pozisyonlar">
-          <div class="text">Pozisyonunu Seç!</div>
-          <div class="pozisyon">Full Stack Web Developer</div>
-          <div class="pozisyon">Front-End Web Developer</div>
-          <div class="pozisyon">PHP/Laravel Developer</div>
-          <div class="pozisyon disabled">Art Director</div>
-        </div><!-- /pozisyonlar -->
+        <div class="text-1">
+          <p>Yolculukta Kullanacağın<br>Envanterini Hazırla !</p>
+        </div>
+
+        <div class="envanter">
+          <div class="sira">
+            <div class="item disabled html5"><span>HTML5</span></div>
+            <div class="item disabled css3 bigtext"><span>CSS3</span></div>
+            <div class="item disabled less bigtext"><span>LESS</span></div>
+            <div class="item disabled sass bigtext"><span>SASS</span></div>
+            <div class="item disabled javascript"><span>Javascript</span></div>
+            <div class="item disabled php bigtext"><span>PHP</span></div>
+            <div class="item disabled laravel"><span>Laravel</span></div>
+          </div>
+          <div class="sira">
+            <div class="item disabled mysql"><span>MySQL</span></div>
+            <div class="item disabled mongodb"><span>MongoDB</span></div>
+            <div class="item disabled expressjs"><span>ExpressJS</span></div>
+            <div class="item disabled angularjs"><span>AngularJS</span></div>
+            <div class="item disabled nodejs"><span>NodeJS</span></div>
+            <div class="item disabled git bigtext"><span>Git</span></div>
+            <div class="item disabled photoshop"><span>Photoshop</span></div>
+            <div class="item disabled sketch"><span>Sketch</span></div>
+          </div>
+        </div>
 
         <div class="ot1 ot-1"></div>
         <div class="balik-suru suru-1"></div>
