@@ -26,7 +26,7 @@
 
       <div class="sahne-1">
         <div class="text-1">
-          <p><b>Macellan</b>'ın Mürettebatında<br>Keşfe Çıkmak İster Misin?</p>
+          <p><b>Macellan</b>'ın Mürettebatına Katılıp<br>Keşfe Çıkmak İster Misin?</p>
           <p class="small">Devam etmek için gemiye tıklayın.</p>
         </div>
         <div class="buzul buzul-1"></div>
@@ -42,7 +42,7 @@
 
       <div class="sahne-3">
         <div class="text-1">
-          <p>Mürettebatımıza Katıldığında<br>Sana Sunacaklarımız:</p>
+          <p>Bizimle Keşfe Çıkarken<br>Sana Sunacaklarımız:</p>
           <p class="small">
             27" iMac Late 2013 <br>
             Sınırsız çay, kahve<br>
@@ -88,7 +88,6 @@
       }, 10000);
     }
 
-
     function gemiHareket () {
       $(".gemi").velocity({ translateY:'25px' }, { duration: 5000, easing: "ease" })
         .velocity({ translateY:'0px' }, { duration: 5000, easing: "ease" });
@@ -129,12 +128,8 @@
         case 2:
           $("#canvas").velocity({ translateX:'-2250px', translateZ: 0 }, 
                               { duration: DEFAULT_DURATION, easing: "ease-in-out", queue: false });
-          $(".gemi").velocity({ translateX:'2600px', scale:'1.3', marginBottom: "170px" },
+          $(".gemi").velocity({ translateX:'2600px', scale:'1.2', marginBottom: "120px" },
                               { duration: DEFAULT_DURATION, queue: false, easing: [.58,.01,.58,1] });
-          // alert('translate3D(-2250px, 0, 0) scale('+SCALE+')');
-          // $(".gemi").velocity('stop');
-          // $(".gemi").css({ transition:'all '+(DEFAULT_DURATION/1000)+'s', transform:'translateX(2600px) scale(1.3)', marginBottom: "170px" });
-          // $("#canvas").css({ transition: 'all '+(DEFAULT_DURATION/1000)+'s', transform: 'translateX(-1250px) scale('+SCALE+') translateZ(0)' });
           $(".sahne-1 .buzul-3").velocity({ translateX: "-700px", tranzlateZ: 0 },
                               { duration: DEFAULT_DURATION, queue: false });
 
