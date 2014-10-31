@@ -281,7 +281,7 @@ p.small {
   left: 0;
   position: absolute;
   margin-left: 7300px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   z-index: 102;
 }
 .sahne-3 .agac-top {
@@ -295,7 +295,7 @@ p.small {
   left: 0;
   position: absolute;
   margin-left: 7550px;
-  margin-bottom: 430px;
+  margin-bottom: 445px;
   z-index: 103;
   will-change: transform;
 }
