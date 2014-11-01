@@ -1,3 +1,47 @@
+.penguen {
+  -webkit-animation: penguen 1s infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation: penguen 1s infinite;
+  -moz-animation-direction: alternate;
+  -moz-animation-timing-function: ease-in-out;
+  animation: penguen 1s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+
+@keyframes penguen {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+}
+@-webkit-keyframes penguen {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+}
+
 .animation-glow {
   -webkit-animation: glow 0.4s infinite;
   -webkit-animation-direction: alternate;

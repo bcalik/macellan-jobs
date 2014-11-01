@@ -40,6 +40,8 @@
       <div class="sahne-2">
         <div class="buzul4 buzul-1"></div>
         <div class="buzul buzul-2"></div>
+        <div class="penguen penguen-1"></div>
+        <div class="penguen penguen-2"></div>
       </div><!-- /sahne-2 -->
 
       <div class="sahne-3">
