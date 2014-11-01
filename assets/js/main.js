@@ -233,6 +233,17 @@ function resized () {
   });
 }
 
+// form fonksyonları
+function sonraki_form (argument) {
+  $(".form .sayfa-1").velocity({ translateX: "-950px", opacity: 0, translateZ: 0 }, { duration: 300, easing: "ease-in-out" });
+  $(".form .sayfa-2").velocity({ translateX: "-950px", opacity: 1, translateZ: 0 }, { duration: 300, easing: "ease-in-out" });
+  $(".sayfa-2 textarea").first().focus();
+}
+function onceki_form (argument) {
+  $(".form .sayfa-1").velocity({ translateX: "0px", opacity: 1, translateZ: 0 }, { duration: 300, easing: "ease-in-out" });
+  $(".form .sayfa-2").velocity({ translateX: "0px", opacity: 0, translateZ: 0 }, { duration: 300, easing: "ease-in-out" });
+  $(".sayfa-1 input").first().focus();
+}
 
 // READY
 $(function(){
@@ -253,6 +264,13 @@ $(function(){
   $('.envanter .item').on("click", function(){
     $(this).toggleClass("disabled");
     $(this).toggleClass("animation-scale-bounce");
+    
+    $("#envanter").val("");
+    $('.envanter .item').each(function(){
+      if ( ! $(this).hasClass('disabled')) {
+        $("#envanter").val( $.trim($('#envanter').val() + " " + $(this).text()) );
+      }
+    });
   });
 
   // canvas controller

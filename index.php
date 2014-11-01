@@ -123,11 +123,19 @@
             <p>Küçükyalı E5 Kavşağı. İnönü Cad. İstanbul Ticaret Üniversitesi.<br>
               Teknoloji Geliştirme Merkezi. No: 4-6. Maltepe, İstanbul</p>
 
-            <input type="text" placeholder="Ad Soyad">
-            <input type="email" placeholder="E-Posta">
-            <input type="text" placeholder="Telefon">
-            <textarea placeholder="Eklemek istedikleriniz"></textarea>
-            <button type="submit">Gönder</button>
+            <div class="sayfa-1">
+              <input type="text" name="adsoyad" placeholder="Ad Soyad">
+              <input type="email" name="eposta" placeholder="E-Posta">
+              <input type="text" name="telefon" placeholder="Telefon">
+              <button type="button" onclick="sonraki_form()">Sonraki</button>
+            </div>
+            <div class="sayfa-2">
+              <textarea name="linkler" placeholder="Portfolyo linkleri, sosyal medya linkleri, vb."></textarea>
+              <textarea name="notlar" placeholder="Eklemek istedikleriniz"></textarea>
+              <button type="button" onclick="onceki_form()">Geri</button>
+              <button type="submit">Gönder</button>
+            </div>
+            <input type="hidden" id="envanter" name="envanter" value="">
           </form>
         </div><!-- /form -->
       </div><!-- /sahne-6 -->

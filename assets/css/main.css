@@ -712,22 +712,23 @@ p.small {
   z-index: 100;
 }
 .sahne-6 .form {
-  top: -320px;
+  top: -300px;
   left: 0;
   position: absolute;
   margin-left: 12360px;
   background-color: #F0F6F7;
-  z-index: 100;
+  z-index: 9999;
   text-align: center;
 }
 .sahne-6 img {
   width: 350px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .sahne-6 .form form {
   background: white;
   padding: 50px;
   width: 1000px;
+  height: 670px;
 }
 .sahne-6 .form h3 {
   font-size: 48px;
@@ -774,4 +775,26 @@ button {
 }
 button:hover {
   background: #C2D7DA;
+}
+textarea {
+  height: 130px;
+}
+.sahne-6 form > div {
+  width: 900px;
+  position: absolute;
+  will-change: transform;
+}
+.sahne-6 form .sayfa-2 {
+  left: 1000px;
+  opacity: 0;
+  font-size: 0;
+}
+.sahne-6 form .sayfa-2 button:nth-child(3) {
+  width: 18%;
+  display: inline-block;
+  margin-right: 2%
+}
+.sahne-6 form .sayfa-2 button:last-child {
+  width: 80%;
+  display: inline-block;
 }
