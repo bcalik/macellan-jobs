@@ -77,6 +77,7 @@ function sahne_degis (no) {
                           { duration: DEFAULT_DURATION, queue: false, easing: [.58,.01,.58,1] });
       
       $(".sahne-4 .envanter .item").css({ opacity: 0, transform: "translateY(-30px)" });
+      $(".sahne-4 .text-1").css({ opacity: 0, transform: 'translateY(-100px)' });
 
       setTimeout(function(){
         $(".agac-top").addClass("animation-bounce");
@@ -86,22 +87,38 @@ function sahne_degis (no) {
 
     case 4:
       $("#canvas").velocity({ translateX:'-8550px', translateZ: 0 },
-                          { duration: DEFAULT_DURATION/2, easing: "ease-in-out", queue: false });
+                          { duration: DEFAULT_DURATION/3*2, easing: "ease-in-out", queue: false });
       $(".gemi").velocity({ translateX:'9000px', scale:'1', marginBottom: "0px" },
-                          { duration: DEFAULT_DURATION/2, queue: false, easing: [.58,.01,.58,1] });
+                          { duration: DEFAULT_DURATION/3*2, queue: false, easing: [.58,.01,.58,1] });
 
       // goruntuyu denize indir
       setTimeout(function(){
         DENIZ_GORUNEN = 90;
         var newH = $window.height() / SCALE / 100 * DENIZ_GORUNEN;
         $(".deniz").velocity({ height: newH },
-          { duration: DEFAULT_DURATION/2, easing: "ease-in-out", queue: false });
+          { duration: 0, easing: "ease-in-out", queue: false });
         $(".yuzey").velocity({
           "bottom": (newH)+"px",
           "height": (($window.height() / SCALE) - (newH+50))+"px",
-        }, { duration: DEFAULT_DURATION/2, easing: "ease-in-out", queue: false });
+        }, { duration: 0, easing: "ease-in-out", queue: false });
+
+        var canvasH = $window.height() / SCALE / 100 * (DENIZ_GORUNEN-DENIZ_GORUNEN_DEFAULT);
+        $("#canvas").velocity({ translateY: canvasH+"px" }, { duration: 0 });
+        $("#canvas").velocity({ translateY: "0px" }, { duration: DEFAULT_DURATION, queue: false });
 
         // baliklar
+        $(".sahne-4 .balik").velocity({ translateX: '500px', translateZ: 0 },
+          { duration: 100000, easing: "linear", queue: false });
+        $(".sahne-4 .balik-suru").velocity({ translateX: '1000px', translateZ: 0 },
+          { duration: 100000, easing: "linear", queue: false });
+        $(".sahne-4 .kaplumbaga").velocity({ translateY: '-500px', translateX: '250px', translateZ: 0 },
+          { duration: 100000, easing: "linear", queue: false });          
+
+        // envanter
+        setTimeout(function(){
+          $(".sahne-4 .text-1").velocity({ opacity: 1, translateY: '0px' }, { duration: DEFAULT_DURATION/3*2 });
+        }, DEFAULT_DURATION/3);
+
         setTimeout(function(){
           var timer = 0;
           $(".sahne-4 .envanter .item").each(function(){
@@ -110,31 +127,40 @@ function sahne_degis (no) {
               $item.css({ transform: "translateY(0px)", opacity: 1 });
             }, timer, $(this));
           });
-
-          $(".sahne-4 .balik").velocity({ translateX: '500px', translateZ: 0 },
-            { duration: 100000, easing: "linear", queue: false });
-          $(".sahne-4 .balik-suru").velocity({ translateX: '1000px', translateZ: 0 },
-            { duration: 100000, easing: "linear", queue: false });
-          $(".sahne-4 .kaplumbaga").velocity({ translateY: '-500px', translateX: '250px', translateZ: 0 },
-            { duration: 100000, easing: "linear", queue: false });          
-        }, DEFAULT_DURATION/2);
+        }, DEFAULT_DURATION/3*2);
 
         // $("#canvas").velocity({ translateY:'-1000px', translateZ: 0 },
         //                      { duration: DEFAULT_DURATION/2, easing: "ease-in-out", queue: false });
-      }, DEFAULT_DURATION/2);
+      }, DEFAULT_DURATION/3*2);
       break;
 
 
     case 5:
+      var canvasH = $window.height() / SCALE / 100 * (DENIZ_GORUNEN-DENIZ_GORUNEN_DEFAULT);
+      $("#canvas").velocity({ translateY: canvasH+"px" }, { duration: DEFAULT_DURATION, queue: false });
+
+      setTimeout(function(){
+        DENIZ_GORUNEN = DENIZ_GORUNEN_DEFAULT;
+        var newH = $window.height() / SCALE / 100 * DENIZ_GORUNEN;
+        $(".deniz").velocity({ height: newH },
+          { duration: 0, easing: "ease-in-out", queue: false });
+        $(".yuzey").velocity({
+          "bottom": (newH)+"px",
+          "height": (($window.height() / SCALE) - (newH+50))+"px",
+        }, { duration: 0, easing: "ease-in-out", queue: false });
+
+        $("#canvas").velocity({ translateY: "0px" }, { duration: 0 });
+      }, DEFAULT_DURATION);
+
       // görüntüyü denizden yukarı çıkart
-      DENIZ_GORUNEN = DENIZ_GORUNEN_DEFAULT;
-      var newH = $window.height() / SCALE / 100 * DENIZ_GORUNEN;
-      $(".deniz").velocity({ height: newH },
-        { duration: DEFAULT_DURATION/2, easing: "ease-in-out", queue: false });
-      $(".yuzey").velocity({
-        "bottom": (newH)+"px",
-        "height": (($window.height() / SCALE) - (newH+50))+"px",
-      }, { duration: DEFAULT_DURATION/2, easing: "ease-in-out", queue: false });
+      // DENIZ_GORUNEN = DENIZ_GORUNEN_DEFAULT;
+      // var newH = $window.height() / SCALE / 100 * DENIZ_GORUNEN;
+      // $(".deniz").velocity({ height: newH },
+      //   { duration: DEFAULT_DURATION/2, easing: "ease-in-out", queue: false });
+      // $(".yuzey").velocity({
+      //   "bottom": (newH)+"px",
+      //   "height": (($window.height() / SCALE) - (newH+50))+"px",
+      // }, { duration: DEFAULT_DURATION/2, easing: "ease-in-out", queue: false });
       break;
 
     default:

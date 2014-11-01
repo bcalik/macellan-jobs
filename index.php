@@ -58,7 +58,7 @@
 
       <div class="sahne-4">
         <div class="text-1">
-          <p>Yolculukta Kullanacağın<br>Envanterini Hazırla !</p>
+          <p>Yolculukta Kullanacağın<br>Envanterini Seç !</p>
         </div>
 
         <div class="envanter">

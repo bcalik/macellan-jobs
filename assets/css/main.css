@@ -305,7 +305,7 @@ p.small {
   top: 0;
   width: 1144px;
   margin-left: 6110px;
-  z-index: 150;
+  z-index: 10;
 }
 .balik-suru {
   background-image: url(../img/balik-suru-1.svg);
