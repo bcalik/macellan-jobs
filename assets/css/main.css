@@ -11,6 +11,7 @@ body, html {
   width: 100%;
   height: 100%;
   overflow: hidden !important;
+  cursor: default;
 }
 body {
   font-family: Open Sans, sans-serif;
@@ -742,6 +743,12 @@ p.small {
 .sahne-6 .form p {
   font-size: 30px;
   padding-bottom: 10px;
+  -webkit-touch-callout: initial;
+  -webkit-user-select: initial;
+  -khtml-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
 }
 input, textarea, button {
   font-size: 30px;

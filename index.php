@@ -116,7 +116,7 @@
         <div class="toprak"></div>
 
         <div class="form">
-          <div class="logo"><img src="http://macellan.net/assets/img/logo.svg" alt="Macellan"></div>
+          <div class="logo"><a href="http://macellan.net"><img src="http://macellan.net/assets/img/logo.svg" alt="Macellan"></a></div>
           <form action="#" method="post">
             <h3>Başvuru Formu</h3>
             <h4>ADRESİMİZ</h4>
