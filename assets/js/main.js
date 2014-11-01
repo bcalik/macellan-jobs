@@ -164,11 +164,32 @@ function sahne_degis (no) {
         }, { duration: 0, easing: "ease-in-out", queue: false });
 
         $("#canvas").velocity({ translateY: "0px" }, { duration: 0 });
+
+        sonraki_sahne();
       }, DEFAULT_DURATION);
+      break;
+
+    case 6:
+      $("#canvas").velocity({ translateX:'-11600px', translateZ: 0 },
+                          { duration: DEFAULT_DURATION/3*2, easing: "ease-in-out", queue: false });
+      $(".gemi").velocity({ translateX:'11000px', scale:'1', marginBottom: "0px" },
+                          { duration: DEFAULT_DURATION/3*2, queue: false, easing: [.58,.01,.58,1] });
+
+      setTimeout(function(){
+        $("#canvas").velocity({ translateY:'300px', translateZ: 0 },
+          { duration: DEFAULT_DURATION/3, easing: "ease-in-out", queue: false });
+
+        setTimeout(function(){
+          $(".sahne-6 input").first().focus();
+        }, DEFAULT_DURATION/3 );
+      }, DEFAULT_DURATION/3*2);
       break;
 
     default:
       // 1. sahneyi oynat
+      $("#canvas").velocity({ translateY:'0px', translateZ: 0 },
+        { duration: DEFAULT_DURATION, easing: "ease-in-out", queue: false });
+
       SAHNE = 1;
       $("#canvas").velocity({ translateX:'0', translateZ: 0 }, 
                           { duration: DEFAULT_DURATION, easing: "ease-in-out", queue: false });

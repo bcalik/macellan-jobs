@@ -258,7 +258,7 @@ p.small {
   width: 1144px;
   margin-left: 60px;
   -webkit-transition: all 1.5s .5s;
-  transition: all 1.5s .5s;
+  transition: all 1.5s 0.5s;
 }
 .sahne-1 {
   /*margin-top: 500px;*/
@@ -693,4 +693,76 @@ p.small {
   border-top-color: #02476A;
   border-bottom-color: #02476A;
   color: #FFFFFF;
+}
+.sahne-6 .toprak {
+  background-image: url(../img/toprak.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  width: 1623px;
+  height: 2141px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  margin-left: 12000px;
+  margin-bottom: -1890px;
+  z-index: 100;
+}
+.sahne-6 .form {
+  top: -320px;
+  left: 0;
+  position: absolute;
+  margin-left: 12360px;
+  background-color: #F0F6F7;
+  z-index: 100;
+  text-align: center;
+}
+.sahne-6 img {
+  width: 350px;
+  margin-bottom: 10px;
+}
+.sahne-6 .form form {
+  background: white;
+  padding: 50px;
+  width: 1000px;
+}
+.sahne-6 .form h3 {
+  font-size: 48px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  color: #376987;
+}
+.sahne-6 .form h4 {
+  font-size: 28px;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.sahne-6 .form p {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+input, textarea, button {
+  font-size: 30px;
+  padding: 20px;
+  display: block;
+  background: #F0F6F7;
+  border: none;
+  width: 100%;
+  margin-top: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  outline: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 100%;
+}
+button {
+  background: #DCE8EA;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #C2D7DA;
 }
