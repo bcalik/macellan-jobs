@@ -41,14 +41,15 @@ p.small {
   position: fixed;
   right: 20px;
   top: 0;
-  opacity: 0.2;
+  /*opacity: 0.2;*/
+  display: none;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
   padding: 10px;
   z-index: 9999;
 }
 #controller:hover {
-  opacity: 1;
+  /*opacity: 1;*/
 }
 #controller label {
   font-size: 12px;
