@@ -68,18 +68,28 @@
             <div class="item disabled less bigtext"><span>LESS</span></div>
             <div class="item disabled sass bigtext"><span>SASS</span></div>
             <div class="item disabled javascript"><span>Javascript</span></div>
-            <div class="item disabled php bigtext"><span>PHP</span></div>
-            <div class="item disabled laravel"><span>Laravel</span></div>
+            <div class="item disabled angularjs"><span>Angular</span></div>
+            <div class="item disabled backbonejs"><span>Backbone</span></div>
+            <div class="item disabled emberjs"><span>Ember</span></div>
           </div>
           <div class="sira">
+            <div class="item disabled nodejs bigtext"><span>Node</span></div>
+            <div class="item disabled php bigtext"><span>PHP</span></div>
+            <div class="item disabled laravel"><span>Laravel</span></div>
+            <div class="item disabled symfony"><span>Symfony</span></div>
+            <div class="item disabled yii bigtext"><span>Yii</span></div>
             <div class="item disabled mysql"><span>MySQL</span></div>
+            <div class="item disabled postgres"><span>Postgres</span></div>
+          </div>
+          <div class="sira">
             <div class="item disabled mongodb"><span>MongoDB</span></div>
-            <div class="item disabled expressjs"><span>ExpressJS</span></div>
-            <div class="item disabled angularjs"><span>AngularJS</span></div>
-            <div class="item disabled nodejs"><span>NodeJS</span></div>
+            <div class="item disabled elastic"><span>Elastic<br>Search</span></div>
+            <div class="item disabled redis"><span>Redis</span></div>
+            <div class="item disabled memcached smalltext"><span>Memcached</span></div>
             <div class="item disabled git bigtext"><span>Git</span></div>
             <div class="item disabled photoshop"><span>Photoshop</span></div>
             <div class="item disabled sketch"><span>Sketch</span></div>
+            <div class="item disabled illustrator"><span>Illustrator</span></div>
           </div>
         </div>
 

@@ -433,10 +433,10 @@ p.small {
 .sahne-4 .envanter {
   position: absolute;
   margin-left: 9043px;
-  margin-bottom: -924px;
+  margin-bottom: -1100px;
   z-index: 9999;
-  width: 1647px;
-  height: 424px;
+  width: 1800px;
+  height: 700px;
   color: #F8F8F8;
   bottom: 0;
   left: 0;
@@ -444,7 +444,7 @@ p.small {
 .sahne-4 .envanter .item {
   margin-right: 38px;
 }
-.sahne-4 .envanter .sira:first-child {
+.sahne-4 .envanter .sira:nth-child(2) {
   margin-left: 102px;
 }
 .envanter .item span {
@@ -495,6 +495,10 @@ p.small {
   font-size: 30px;
   margin-top: 27px;
 }
+.envanter .item.smalltext span {
+  font-size: 21px;
+  margin-top: 34px;
+}
 .item, .item:before, .item:after {
   /*+transition: all 0.2s ease-out;*/
   -webkit-transition: all 0.2s ease-out;
@@ -540,10 +544,26 @@ p.small {
   border-top-color: #F17C70;
   border-bottom-color: #F17C70;
 }
+.yii.item, .yii.item:before, .yii.item:after {
+  background-color: #3C86C7;
+  border-top-color: #3C86C7;
+  border-bottom-color: #3C86C7;
+}
+.symfony.item, .symfony.item:before, .symfony.item:after {
+  background-color: #1A171B;
+  border-top-color: #1A171B;
+  border-bottom-color: #1A171B;
+  color: #FFFFFF;
+}
 .mysql.item, .mysql.item:before, .mysql.item:after {
   background-color: #5684A0;
   border-top-color: #5684A0;
   border-bottom-color: #5684A0;
+}
+.postgres.item, .postgres.item:before, .postgres.item:after {
+  background-color: #0091C1;
+  border-top-color: #0091C1;
+  border-bottom-color: #0091C1;
 }
 .mongodb.item, .mongodb.item:before, .mongodb.item:after {
   background-color: #634838;
@@ -551,16 +571,40 @@ p.small {
   border-bottom-color: #634838;
   color: #6FD078;
 }
-.expressjs.item, .expressjs.item:before, .expressjs.item:after {
-  background-color: #FFFFFF;
-  border-top-color: #FFFFFF;
-  border-bottom-color: #FFFFFF;
-  color: #000000;
+.elastic.item span {
+  margin-top: 20px;
+}
+.elastic.item, .elastic.item:before, .elastic.item:after {
+  background-color: #FFF;
+  border-top-color: #FFF;
+  border-bottom-color: #FFF;
+  color: #74B73F;
+}
+.redis.item, .redis.item:before, .redis.item:after {
+  background-color: #D82A20;
+  border-top-color: #D82A20;
+  border-bottom-color: #D82A20;
+}
+.memcached.item, .memcached.item:before, .memcached.item:after {
+  background-color: #2A8E84;
+  border-top-color: #2A8E84;
+  border-bottom-color: #2A8E84;
+  color: white;
 }
 .angularjs.item, .angularjs.item:before, .angularjs.item:after {
   background-color: #BB262F;
   border-top-color: #BB262F;
   border-bottom-color: #BB262F;
+}
+.backbonejs.item, .backbonejs.item:before, .backbonejs.item:after {
+  background-color: #0071B5;
+  border-top-color: #0071B5;
+  border-bottom-color: #0071B5;
+}
+.emberjs.item, .emberjs.item:before, .emberjs.item:after {
+  background-color: #E76848;
+  border-top-color: #E76848;
+  border-bottom-color: #E76848;
 }
 .nodejs.item, .nodejs.item:before, .nodejs.item:after {
   background-color: #80CF04;
@@ -575,10 +619,16 @@ p.small {
   color: #3D2D00;
 }
 .photoshop.item, .photoshop.item:before, .photoshop.item:after {
-  background-color: #3DC5FC;
-  border-top-color: #3DC5FC;
-  border-bottom-color: #3DC5FC;
-  color: #3A3753;
+  background-color: #46C6FA;
+  border-top-color: #46C6FA;
+  border-bottom-color: #46C6FA;
+  color: #24253A;
+}
+.illustrator.item, .illustrator.item:before, .illustrator.item:after {
+  background-color: #974127;
+  border-top-color: #974127;
+  border-bottom-color: #974127;
+  color: #FCC52D;
 }
 .sketch.item, .sketch.item:before, .sketch.item:after {
   background-color: #FDC325;
