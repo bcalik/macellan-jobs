@@ -43,6 +43,9 @@ function sahne_degis (no) {
   // sahneler
   switch (SAHNE) {
     case 1:
+      // arkaplan rengi
+      $("body").velocity({ backgroundColor: "#F0F6F7" }, { duration: DEFAULT_DURATION });
+
       // gemiyi ve görüntüyü başlangıç noktasına getir
       $("#canvas").velocity({ translateX:'0', translateZ: 0 }, 
                           { duration: DEFAULT_DURATION, easing: "ease-in-out", queue: false });
@@ -70,6 +73,8 @@ function sahne_degis (no) {
 
 
     case 3:
+      // arkaplan rengi
+      $("body").velocity({ backgroundColor: "#B3E8FF" }, { duration: DEFAULT_DURATION });
       // gemiyi ve görüntüyü yesil alana yanaştır
       $("#canvas").velocity({ translateX:'-6050px', translateZ: 0 },
                           { duration: DEFAULT_DURATION, easing: "ease-in-out", queue: false });
@@ -148,9 +153,6 @@ function sahne_degis (no) {
       $('.gemi .halat').velocity({ height: '0px' }, { duration: DEFAULT_DURATION/3*2 });
       $('.gemi .demir').velocity({ translateY: '0px', rotateZ: '0deg' }, { duration: DEFAULT_DURATION/3*2 });
 
-      // demir ve halatin glow efektini kaldir
-      $('.gemi .demir, .gemi .halat').removeClass('animation-glow');
-
       var canvasH = $window.height() / SCALE / 100 * (DENIZ_GORUNEN-DENIZ_GORUNEN_DEFAULT);
       $("#canvas").velocity({ translateY: canvasH+"px" }, { duration: DEFAULT_DURATION, queue: false });
 
@@ -171,6 +173,12 @@ function sahne_degis (no) {
       break;
 
     case 6:
+      // demir ve halatin glow efektini kaldir
+      $('.gemi .demir, .gemi .halat').removeClass('animation-glow');
+
+      // arkaplan rengi
+      $("body").velocity({ backgroundColor: "#F0F6F7" }, { duration: DEFAULT_DURATION/3*2 });
+
       $("#canvas").velocity({ translateX:'-11600px', translateZ: 0 },
                           { duration: DEFAULT_DURATION/3*2, easing: "ease-in-out", queue: false });
       $(".gemi").velocity({ translateX:'11000px', scale:'1', marginBottom: "0px" },
