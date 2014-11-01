@@ -106,6 +106,15 @@ function sahne_degis (no) {
         $("#canvas").velocity({ translateY: canvasH+"px" }, { duration: 0 });
         $("#canvas").velocity({ translateY: "0px" }, { duration: DEFAULT_DURATION, queue: false });
 
+        // demir ve halat
+        $('.gemi .halat').velocity({ height: '400px' }, { duration: DEFAULT_DURATION/3*2 });
+        $('.gemi .demir').velocity({ translateY: '400px', rotateZ: '-30deg' }, { duration: DEFAULT_DURATION/3*2 });
+
+        // demir, halat glow
+        setTimeout(function(){
+          $('.gemi .demir, .gemi .halat').addClass('animation-glow');
+        }, DEFAULT_DURATION+500);
+
         // baliklar
         $(".sahne-4 .balik").velocity({ translateX: '500px', translateZ: 0 },
           { duration: 100000, easing: "linear", queue: false });
@@ -136,6 +145,13 @@ function sahne_degis (no) {
 
 
     case 5:
+      // demir ve halat
+      $('.gemi .halat').velocity({ height: '0px' }, { duration: DEFAULT_DURATION/3*2 });
+      $('.gemi .demir').velocity({ translateY: '0px', rotateZ: '0deg' }, { duration: DEFAULT_DURATION/3*2 });
+
+      // demir ve halatin glow efektini kaldir
+      $('.gemi .demir, .gemi .halat').removeClass('animation-glow');
+
       var canvasH = $window.height() / SCALE / 100 * (DENIZ_GORUNEN-DENIZ_GORUNEN_DEFAULT);
       $("#canvas").velocity({ translateY: canvasH+"px" }, { duration: DEFAULT_DURATION, queue: false });
 
@@ -214,6 +230,7 @@ $(function(){
   setTimeout(function(){
     denizHareket();
     gemiHareket();
+    $(".sahne-1 .text-1").css({ transform: 'translateY(0px)', opacity: 1 });
   }, 1);
 
   // resize oldugunda
@@ -238,7 +255,7 @@ $(function(){
   });
 
   // gemiye tıklandığında sonraki sahneye gec
-  $(".gemi").on("click", function(){
+  $(".gemi, .sahne-4 .devam-btn").on("click", function(){
     sonraki_sahne();
   });
 });

@@ -1,27 +1,61 @@
+.animation-glow {
+  -webkit-animation: glow 0.7s infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation: glow 0.7s infinite;
+  -moz-animation-direction: alternate;
+  animation: glow 0.7s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes glow {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .kaplumbaga .sag {
   -webkit-animation: kaplumbaga-sag-kol 1s infinite;
   -webkit-animation-direction: alternate;
-  transform-origin: center left;
+  -webkit-transform-origin: center left;
+  -moz-animation: kaplumbaga-sag-kol 1s infinite;
+  -moz-animation-direction: alternate;
+  -moz-transform-origin: center left;
   animation: kaplumbaga-sag-kol 1s infinite;
   animation-direction: alternate;
-  -webkit-transform-origin: center left;
+  transform-origin: center left;
 }
 .kaplumbaga .sol {
   -webkit-animation: kaplumbaga-sol-kol 1s infinite;
   -webkit-animation-direction: alternate;
-  transform-origin: center right;
+  -webkit-transform-origin: center right;
+  -moz-animation: kaplumbaga-sol-kol 1s infinite;
+  -moz-animation-direction: alternate;
+  -moz-transform-origin: center right;
   animation: kaplumbaga-sol-kol 1s infinite;
   animation-direction: alternate;
-  -webkit-transform-origin: center right;
+  transform-origin: center right;
 }
 
 @keyframes kaplumbaga-sol-kol {
   0% {
     transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
   }
   100% {
     transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
     -webkit-transform: rotate(-15deg);
   }
 }
@@ -29,10 +63,12 @@
 @-webkit-keyframes kaplumbaga-sol-kol {
   0% {
     transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
   }
   100% {
     transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
     -webkit-transform: rotate(-15deg);
   }
 }
@@ -40,10 +76,12 @@
 @keyframes kaplumbaga-sag-kol {
   0% {
     transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
   }
   100% {
     transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
     -webkit-transform: rotate(-15deg);
   }
 }
@@ -51,16 +89,19 @@
 @-webkit-keyframes kaplumbaga-sag-kol {
   0% {
     transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
   }
   100% {
     transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
     -webkit-transform: rotate(15deg);
   }
 }
 
 .animation-bounce {
   -webkit-animation: bounce 3500ms cubic-bezier(.7,.35,.96,.19) both;
+  -moz-animation: bounce 3500ms cubic-bezier(.7,.35,.96,.19) both;
   animation: bounce 3500ms cubic-bezier(.7,.35,.96,.19) both;
 }
 

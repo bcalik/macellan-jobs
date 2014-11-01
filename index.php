@@ -21,7 +21,10 @@
   <div id="canvas">
     
     <div class="yuzey">
-      <div class="gemi"></div>
+      <div class="gemi">
+        <div class="halat"></div>
+        <div class="demir"></div>
+      </div>
 
       <div class="sahne-1">
         <div class="text-1">
@@ -59,7 +62,10 @@
       <div class="sahne-4">
         <div class="text-1">
           <p>Yolculukta Kullanacağın<br>Envanterini Seç !</p>
+          <p class="small">Ardından devam etmek için demire tıkla.</p>
         </div>
+
+        <div class="devam-btn"></div>
 
         <div class="envanter">
           <div class="sira">

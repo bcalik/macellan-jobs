@@ -10,7 +10,7 @@
 body, html {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 body {
   font-family: Open Sans, sans-serif;
@@ -141,7 +141,7 @@ p.small {
   will-change: transform;
 }
 .gemi {
-  background-image: url(../img/gemi-kucuk.png);
+  background-image: url(../img/gemi3.png);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: contain;
@@ -154,6 +154,33 @@ p.small {
   position: absolute;
   bottom: 0;
   will-change: transform;
+}
+.gemi .demir {
+  background-image: url(../img/demir.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  width: 90px;
+  height: 101px;
+  left: 475px;
+  top: 410px;
+  position: absolute;
+  z-index: 99999;
+  cursor: pointer;
+  -webkit-transform-origin: 60px 3px;
+  transform-origin: 60px 3px;
+}
+.gemi .halat {
+  background-image: url(../img/halat.png);
+  background-repeat: repeat-y;
+  background-position: left top;
+  background-size: contain;
+  width: 5px;
+  height: 0px;
+  left: 550px;
+  top: 410px;
+  position: absolute;
+  will-change: height;
 }
 .buzul {
   background-image: url(../img/buzul.svg);
@@ -225,8 +252,13 @@ p.small {
   margin-bottom: -50px;
 }
 .sahne-1 .text-1 {
+  transform: translateY(-100px);
+  -webkit-transform: translateY(-100px);
+  opacity: 0;
   width: 1144px;
   margin-left: 60px;
+  -webkit-transition: all 1.5s .5s;
+  transition: all 1.5s .5s;
 }
 .sahne-1 {
   /*margin-top: 500px;*/
@@ -430,6 +462,9 @@ p.small {
   bottom: 0;
   left: 0;
 }
+.sahne-4 .text-1 p.small {
+  color: #FFF;
+}
 .sahne-4 .envanter {
   position: absolute;
   margin-left: 9043px;
@@ -446,6 +481,17 @@ p.small {
 }
 .sahne-4 .envanter .sira:nth-child(2) {
   margin-left: 102px;
+}
+.sahne-4 .devam-btn {
+  position: absolute;
+  margin-left: 10094px;
+  margin-bottom: -350px;
+  z-index: 9999;
+  width: 120px;
+  height: 400px;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
 }
 .envanter .item span {
   position: absolute;
