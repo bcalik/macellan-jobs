@@ -138,8 +138,6 @@ function sahne_degis (no) {
           });
         }, DEFAULT_DURATION/3*2);
 
-        // $("#canvas").velocity({ translateY:'-1000px', translateZ: 0 },
-        //                      { duration: DEFAULT_DURATION/2, easing: "ease-in-out", queue: false });
       }, DEFAULT_DURATION/3*2);
       break;
 
@@ -167,16 +165,6 @@ function sahne_degis (no) {
 
         $("#canvas").velocity({ translateY: "0px" }, { duration: 0 });
       }, DEFAULT_DURATION);
-
-      // görüntüyü denizden yukarı çıkart
-      // DENIZ_GORUNEN = DENIZ_GORUNEN_DEFAULT;
-      // var newH = $window.height() / SCALE / 100 * DENIZ_GORUNEN;
-      // $(".deniz").velocity({ height: newH },
-      //   { duration: DEFAULT_DURATION/2, easing: "ease-in-out", queue: false });
-      // $(".yuzey").velocity({
-      //   "bottom": (newH)+"px",
-      //   "height": (($window.height() / SCALE) - (newH+50))+"px",
-      // }, { duration: DEFAULT_DURATION/2, easing: "ease-in-out", queue: false });
       break;
 
     default:
