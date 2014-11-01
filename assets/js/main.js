@@ -144,6 +144,7 @@ function sahne_degis (no) {
 
     case 5:
       // demir ve halat
+      $('.gemi .demir, .gemi .halat').removeClass('animation-glow');
       $('.gemi .halat').velocity({ height: '0px' }, { duration: DEFAULT_DURATION/3*2 });
       $('.gemi .demir').velocity({ translateY: '0px', rotateZ: '0deg' }, { duration: DEFAULT_DURATION/3*2 });
 

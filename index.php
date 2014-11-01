@@ -119,7 +119,7 @@
           <div class="logo"><a href="http://macellan.net"><img src="http://macellan.net/assets/img/logo.svg" alt="Macellan"></a></div>
           <form action="#" method="post">
             <h3>Başvuru Formu</h3>
-            <h4>ADRESİMİZ</h4>
+            <h4>ADRES</h4>
             <p>Küçükyalı E5 Kavşağı. İnönü Cad. İstanbul Ticaret Üniversitesi.<br>
               Teknoloji Geliştirme Merkezi. No: 4-6. Maltepe, İstanbul</p>
 
