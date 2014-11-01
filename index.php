@@ -55,6 +55,7 @@
             Hey şey süperse devam edelim!
           </p>
         </div>
+        <div class="lama lama-1"></div>
         <div class="agac"></div>
         <div class="agac-top"></div>
         <div class="yesil-alan"></div>
