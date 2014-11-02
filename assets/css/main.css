@@ -108,10 +108,10 @@ p.small {
 .deniz > div {
   position: absolute;
   /*+transition: all 5s cubic-bezier(0.420, 0.000, 0.580, 1.000);*/
-  -webkit-transition: all 5s cubic-bezier(0.420, 0.000, 0.580, 1.000);
-  -moz-transition: all 5s cubic-bezier(0.420, 0.000, 0.580, 1.000);
-  -o-transition: all 5s cubic-bezier(0.420, 0.000, 0.580, 1.000);
-  transition: all 5s cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  -webkit-transition: transform 5s cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  -moz-transition: transform 5s cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  -o-transition: transform 5s cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  transition: transform 5s cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
 .deniz .dalga-1 {
   background-image: url(../img/deniz-1.png);
@@ -137,11 +137,11 @@ p.small {
 .deniz .taban-1 {
   background-image: url(../img/deniz-alt4.png);
   width: 100%;
-  height: 100%;
+  height: calc(100% + 25px);
   background-repeat: repeat-x;
   background-position: left top;
   z-index: 300;
-  bottom: 25px;
+  bottom: 0px;
   will-change: transform;
 }
 .gemi {
