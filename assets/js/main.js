@@ -260,6 +260,7 @@ $(function(){
     denizHareket();
     gemiHareket();
     $(".sahne-1 .text-1").css({ transform: 'translateY(0px)', opacity: 1 });
+    resized();
   }, 1);
 
   // resize oldugunda
