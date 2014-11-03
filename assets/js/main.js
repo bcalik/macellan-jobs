@@ -1,7 +1,7 @@
 function denizHareket () {
-  $(".dalga-1").css({ transform: "translateX(-200px)" });
+  $(".dalga-1").css({ transform: "translateX(-100px)" });
   $(".dalga-2").css({ transform: "translateX(200px)" });
-  $(".taban-1").css({ transform: "translateX(-100px)" });
+  $(".taban-1").css({ transform: "translateX(-300px)" });
 
   setTimeout(function(){
     $(".dalga-1").css({ transform: "translateX(0px)" });
@@ -44,7 +44,7 @@ function sahne_degis (no) {
   switch (SAHNE) {
     case 1:
       // arkaplan rengi
-      $("body").velocity({ backgroundColor: "#F0F6F7" }, { duration: DEFAULT_DURATION });
+      // $("body").velocity({ backgroundColor: "#F0F6F7" }, { duration: DEFAULT_DURATION });
 
       // gemiyi ve görüntüyü başlangıç noktasına getir
       $("#canvas").velocity({ translateX:'0', translateZ: 0 }, 
@@ -74,7 +74,7 @@ function sahne_degis (no) {
 
     case 3:
       // arkaplan rengi
-      $("body").velocity({ backgroundColor: "#B3E8FF" }, { duration: DEFAULT_DURATION });
+      // $("body").velocity({ backgroundColor: "#B3E8FF" }, { duration: DEFAULT_DURATION });
       // gemiyi ve görüntüyü yesil alana yanaştır
       $("#canvas").velocity({ translateX:'-6050px', translateZ: 0 },
                           { duration: DEFAULT_DURATION, easing: "ease-in-out", queue: false });
@@ -177,7 +177,7 @@ function sahne_degis (no) {
       $('.gemi .demir, .gemi .halat').removeClass('animation-glow');
 
       // arkaplan rengi
-      $("body").velocity({ backgroundColor: "#F0F6F7" }, { duration: DEFAULT_DURATION/3*2 });
+      // $("body").velocity({ backgroundColor: "#F0F6F7" }, { duration: DEFAULT_DURATION/3*2 });
 
       $("#canvas").velocity({ translateX:'-11600px', translateZ: 0 },
                           { duration: DEFAULT_DURATION/3*2, easing: "ease-in-out", queue: false });
@@ -225,7 +225,7 @@ function sonraki_sahne () {
 
 // OPTIMIZE CANVAS SIZE
 var OPTIMIZED_WIDTH = 2500;
-var DENIZ_GORUNEN_DEFAULT = 30;
+var DENIZ_GORUNEN_DEFAULT = 10;
 var DENIZ_GORUNEN = DENIZ_GORUNEN_DEFAULT;
 var SCALE = 0;
 $window = $(window);
