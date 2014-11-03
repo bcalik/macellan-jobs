@@ -26,7 +26,7 @@ function gemiHareket () {
 // default degerler
 var SAHNE = 1;
 var SAHNE_ANIM = false;
-var DEFAULT_DURATION = 3000;
+var DEFAULT_DURATION = 500;
 
 function sahne_degis (no) {
   if (SAHNE_ANIM) return;
@@ -185,8 +185,12 @@ function sahne_degis (no) {
                           { duration: DEFAULT_DURATION/3*2, queue: false, easing: [.58,.01,.58,1] });
 
       setTimeout(function(){
-        $("#canvas").velocity({ translateY:'300px', translateZ: 0 },
-          { duration: DEFAULT_DURATION/3, easing: "ease-in-out", queue: false });
+        var offsetTop = $(".sahne-6 .form").offset().top - 30;
+        if (offsetTop < 0) {
+          offsetTop = (offsetTop * -1) / SCALE;
+          $("#canvas").velocity({ translateY:offsetTop+'px', translateZ: 0 },
+            { duration: DEFAULT_DURATION/3, easing: "ease-in-out", queue: false });      
+        }
 
         setTimeout(function(){
           $(".sahne-6 input").first().focus();
@@ -225,7 +229,7 @@ function sonraki_sahne () {
 
 // OPTIMIZE CANVAS SIZE
 var OPTIMIZED_WIDTH = 2500;
-var DENIZ_GORUNEN_DEFAULT = 10;
+var DENIZ_GORUNEN_DEFAULT = 15;
 var DENIZ_GORUNEN = DENIZ_GORUNEN_DEFAULT;
 var SCALE = 0;
 $window = $(window);

@@ -24,10 +24,10 @@ body {
 }
 p {
   line-height: 1.2em;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility !important;
   cursor: default;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
 }
 p b {
   font-weight: 500;
@@ -145,7 +145,7 @@ p.small {
   will-change: transform;
 }
 .gemi {
-  background-image: url(../img/gemi3.png);
+  background-image: url(../img/gemi.svg);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: contain;
@@ -260,7 +260,8 @@ p.small {
   -webkit-transform: translateY(-100px);
   opacity: 0;
   width: 1144px;
-  margin-left: 60px;
+  margin-left: 160px;
+  margin-top: 100px;
   -webkit-transition: all 1.5s .5s;
   transition: all 1.5s 0.5s;
 }
@@ -344,10 +345,10 @@ p.small {
   position: absolute;
   z-index: 101;
   margin-left: 7580px;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 .sahne-3 .agac {
-  background-image: url(../img/agac.png);
+  background-image: url(../img/agac.svg);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: contain;
@@ -379,7 +380,8 @@ p.small {
   position: absolute;
   top: 0;
   width: 1144px;
-  margin-left: 6110px;
+  margin-left: 6210px;
+  margin-top: 100px;
   z-index: 10;
 }
 .balik-suru {
@@ -752,7 +754,7 @@ p.small {
   z-index: 100;
 }
 .sahne-6 .form {
-  top: -300px;
+  bottom: 300px;
   left: 0;
   position: absolute;
   margin-left: 12360px;

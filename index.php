@@ -31,7 +31,7 @@
       <div class="sahne-1">
         <div class="text-1">
           <p><b>Macellan</b>'ın Mürettebatına Katılıp<br>Keşfe Çıkmak İster Misin?</p>
-          <p class="small">Devam etmek için gemiye tıklayın.</p>
+          <p class="small">DEVAM ETMEK ÇİN GEMİYE TIKLAYIN!</p>
         </div>
         <div class="buzul buzul-1"></div>
         <div class="buzul2 buzul-2"></div>
