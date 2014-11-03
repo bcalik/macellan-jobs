@@ -8,8 +8,8 @@
 
   <link rel="stylesheet" href="assets/css/fonts.css">
   <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/anims.css">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/anims.css?v=<?=time()?>">
+  <link rel="stylesheet" href="assets/css/main.css?v=<?=time()?>">
 </head>
 <body>
   
