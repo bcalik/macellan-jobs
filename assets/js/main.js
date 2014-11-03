@@ -26,7 +26,7 @@ function gemiHareket () {
 // default degerler
 var SAHNE = 1;
 var SAHNE_ANIM = false;
-var DEFAULT_DURATION = 500;
+var DEFAULT_DURATION = 3000;
 
 function sahne_degis (no) {
   if (SAHNE_ANIM) return;
